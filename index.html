@@ -5,12 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>main</title>
     <link rel="stylesheet" href="styles/main.sass">
 </head>
 <body>
 <header>
-    <include src="templates/header.html"></include>
+    <block name="header"><include src="templates/header.html"></include></block>
 <nav>
     <div class="dropdown">
         <!-- trigger button -->
@@ -39,12 +39,15 @@
 </header>
 <section>
     <h1>SECTION</h1>
+    <block name="content"><include src="templates/content.html"></include></block>
 </section>
 <aside>
     <h1>ASIDE</h1>
+    <block name="sidebar"><include src="templates/sidebar.html"></include></block>
 </aside>
 <footer>
     <h1>FOOTER</h1>
+    <block name="footer"><include src="templates/footer.html"></include></block>
 </footer>
 </body>
 </html>
