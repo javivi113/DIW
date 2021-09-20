@@ -14,6 +14,9 @@ body
     height: calc(25% - 2rem)
     margin: 1rem
     width: calc(100% - 2rem)
+    nav
+      background: #67FF12
+      text-align: center
 
   section
     background-color: bisque
@@ -31,3 +34,33 @@ body
     height: calc(15% - 2rem)
     margin: 1rem
     width: calc(100% - 2rem)
+.dropdown
+  display: inline-block
+  position: center
+.dropdown .dropdown-menu
+  position: absolute
+  top: 100%
+  display: none
+  margin: 0
+  list-style: none
+  width: 100%
+  padding: 0
+  img
+    position: center
+.dropdown:hover .dropdown-menu
+  display: block
+.dropdown button
+  background: #67FF12
+  color: #000
+  border: none
+  margin: 0
+  padding: 0.4em 0.8em
+  font-size: 1em
+.dropdown a
+  display: block
+  padding: 0
+  text-decoration: none
+  background: #000000
+  color: #7FF126
+.dropdown a:hover
+  background: #FFFFFF
